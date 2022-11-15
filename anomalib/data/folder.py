@@ -114,7 +114,7 @@ def make_dataset(
 
     filenames = []
     labels = []
-    dirs = {"normal": normal_dir, "abnormal": abnormal_dir}
+    dirs = {"normal": normal_dir} #, "abnormal": abnormal_dir}
 
     if normal_test_dir:
         dirs = {**dirs, **{"normal_test": normal_test_dir}}
